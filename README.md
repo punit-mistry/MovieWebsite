@@ -12,7 +12,7 @@
 1. Install Git on your system if you haven't already.
 2. Run `git clone https://git.ripper.lol/ripper/Stream.git`
 
-## 🔧 Installation
+## 🔧 Setup
 1. Install Node.js if you haven't already from [nodejs.org](https://nodejs.org)
 2. Download the script using instructions above.
 3. Open a terminal in the script directory.
