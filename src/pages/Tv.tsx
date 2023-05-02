@@ -111,7 +111,7 @@ export default function Tv(){
           </div>
 
           <div className="media-actions">
-            <Link to={`/player/${id}?e=1&s=${season}`}>
+            <Link to={`/player/${id}?s=${season}&e=1${data.seasons ? "&ms="+data.seasons : ""}${episodes ? "&me="+episodes.length : ""}`}>
               <button className="primary">
                 <i className="fa-solid fa-play"></i>
                 <p>S{season} E1</p>

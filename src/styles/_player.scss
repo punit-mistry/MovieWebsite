@@ -1,7 +1,4 @@
 .player{
-}
-
-.player iframe{
   position: absolute;
   
   top: 0;
@@ -10,9 +7,14 @@
   width: 100%;
   height: 100%;
 
-  border: 0;
-
   z-index: 11;
+}
+
+.player iframe{
+  width: 100%;
+  height: 100%;
+
+  border: 0;
 }
 
 .player .overlay{
@@ -22,34 +24,46 @@
 
   position: absolute;
   
-  top: 15px;
-  right: 15px;
+  top: 30px;
+  right: 30px;
   
   z-index: 12;
 
   cursor: pointer;
 }
 
-.player .overlay i{
+.player .overlay a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   margin: 0 10px;
 
   font-size: 20px;
   
-  &.fa-xmark{
+  .fa-close{
     font-size: 26px;
   }
-}
 
-@media screen and (max-width: 600px){
-  .player .overlay i{
-    font-size: 16px;
+  &:first-child{
+    margin-left: 0;
+  }
 
-    margin: 0 5px;
-
-    vertical-align: middle;
-    
-    &.fa-xmark{
-      font-size: 18px;
-    }
+  &:last-child{
+    margin-right: 0;
   }
 }
+
+// @media screen and (max-width: 600px){
+//   .player .overlay i{
+//     font-size: 16px;
+
+//     margin: 0 5px;
+
+//     vertical-align: middle;
+    
+//     &.fa-xmark{
+//       font-size: 18px;
+//     }
+//   }
+// }
