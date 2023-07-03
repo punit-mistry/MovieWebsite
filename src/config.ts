@@ -1,6 +1,6 @@
 export default {
   //Site display name
-  SITE_TITLE: "Ripper+",
+  SITE_TITLE: "Home Movies..",
 
   //Put your discord link here or null to disable
   SITE_DISCORD: "https://ripper.lol/discord.html",

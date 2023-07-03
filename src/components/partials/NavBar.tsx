@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react"
 import { Link } from "react-router-dom";
-
+import Image from '../../assets/logo.png'
 import conf from "../../config";
 
 export default function NavBar(){
@@ -36,7 +36,7 @@ export default function NavBar(){
   return (
     <nav className={scrolled ? "scrolled" : ""}>
       <Link to="/">
-        <img className="logo" src="/assets/logo.png" alt={conf.SITE_TITLE} />
+        <img className="logo" src={Image} alt={conf.SITE_TITLE} />
       </Link>
 
       <div className="links">

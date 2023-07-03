@@ -1,23 +1,16 @@
 import conf from "../../config";
-
+import Image from '../../assets/logo.png'
 export default function Footer(){
   return (
     <footer>
-      <img src="/assets/logo.png" alt="Logo" />
+      <img src={Image} alt="Logo" />
 
       <div className="links">
-        {
-          conf.SITE_DISCORD &&
-          <a href={conf.SITE_DISCORD} target="_blank">Discord</a>
-        }
-
-        {
-          conf.SITE_CREDITS &&
-          <a href="https://ripper.lol" target="_blank">🎨 by ripper.lol</a>
-        }
+       Happy Watching...
+        
       </div>
 
-      <p className="disclaimer">&copy; {conf.SITE_TITLE}. We do not store any media.</p>
+      <p className="disclaimer">&copy;  We do not store any media.</p>
     </footer>
   )
 }
